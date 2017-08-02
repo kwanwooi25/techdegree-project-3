@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Code Review | Signup for Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700,900" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <h1 class="header-title">The Code Review</h1>
+      <h2 class="sub-title">Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+
+    <main>
+      <form class="" action="index.html" method="post">
+
+        <div class="line-double"></div> <!-- draw line-double -->
+
+        <fieldset class="contact-info">
+          <legend>Contact Information</legend>
+          <div class="form-element">
+            <label for="user_name">Full Name</label>
+            <input type="text" id="user_name" name="user_name" placeholder="Required">
+          </div>
+          <div class="form-element">
+            <label for="user_email">Email Address</label>
+            <input type="email" id="user_email" name="user_email" placeholder="Required">
+          </div>
+          <div class="form-element">
+            <label for="user_phone">Phone Number</label>
+            <input type="tel" id="user_phone" name="user_phone">
+          </div>
+          <div class="form-element">
+            <label for="user_address_street">Street Address</label>
+            <input type="text" id="user_address_street" name="user_address_street">
+          </div>
+          <div class="form-element">
+            <label for="user_address_city">City</label>
+            <input type="text" id="user_address_city" name="user_address_city">
+          </div>
+          <div class="form-element">
+            <label for="user_address_state">State</label>
+            <select class="" id="user_address_state" name="user_address_state">
+              <option value="" disabled selected>Choose State</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="form-element">
+            <label for="user_address_zipcode">Zip Code</label>
+            <input type="text" id="user_address_zipcode" name="user_address_zipcode">
+          </div>
+        </fieldset>
+
+        <div class="line"></div> <!-- draw line -->
+
+        <fieldset class="newsletter">
+          <legend>Newsletter</legend>
+          <div class="checkbox-group">
+            <p>Select the newsletters you would like to recieve</p>
+            <div class="checkbox">
+              <input type="checkbox" id="chk_html_news" name="chk_html_news">
+              <label for="chk_html_news">HTML News</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="chk_css_news" name="chk_css_news">
+              <label for="chk_css_news">CSS News</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="chk_js_news" name="chk_js_news">
+              <label for="chk_js_news">JavaScript News</label>
+            </div>
+          </div>
+          <div class="radio-group">
+            <p>Newsletter format</p>
+            <div class="radio">
+              <input type="radio" id="radio_html" name="radio_newsletter_format">
+              <label for="radio_html">HTML</label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="radio_plain_text" name="radio_newsletter_format">
+              <label for="radio_plain_text">Plain Text</label>
+            </div>
+          </div>
+          <div class="textarea">
+            <p>Other topics you'd like to hear about</p>
+            <textarea id="txt_other_topics" name="name" rows="8"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit" name="submit">Sign Up</button>
+      </form>
+    </main>
+
+    <footer>
+      <p class="copyright"><em>Copyright The Code Review</em></p>
+    </footer>
+
+  </body>
+</html>
