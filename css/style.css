@@ -13,6 +13,11 @@ body {
   color: #617383;
 }
 
+main {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
 .line,
 .line-double {
   width: 100%;
@@ -144,4 +149,37 @@ footer {
 
 footer p {
   color: #A4A9AE;
+}
+
+@media (min-width: 768px) {
+
+  /**************************************************
+  HEADER
+  ***************************************************/
+
+  .header-title {
+    margin-bottom: 50px;
+  }
+
+  /**************************************************
+  FORM LAYOUT
+  ***************************************************/
+
+  .form-element {
+    display: flex;
+    display: -ms-flex;
+    margin: 10px 0;
+  }
+
+  .contact-info label {
+    flex: 1;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    flex: 3;
+  }
+
 }
