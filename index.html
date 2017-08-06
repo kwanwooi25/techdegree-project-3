@@ -16,7 +16,7 @@
     </header>
 
     <main>
-      <form class="" action="index.html" method="post">
+      <form action="index.html" method="post">
 
         <div class="line-double"></div> <!-- draw line-double -->
 
@@ -24,11 +24,23 @@
           <legend>Contact Information</legend>
           <div class="form-element">
             <label for="user_name">Full Name</label>
-            <input type="text" id="user_name" name="user_name" placeholder="Required">
+            <input type="text"
+                    id="user_name"
+                    name="user_name"
+                    placeholder="Required"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Required'"
+                    required>
           </div>
           <div class="form-element">
             <label for="user_email">Email Address</label>
-            <input type="email" id="user_email" name="user_email" placeholder="Required">
+            <input type="email"
+                    id="user_email"
+                    name="user_email"
+                    placeholder="Required"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Required'"
+                    required>
           </div>
           <div class="form-element">
             <label for="user_phone">Phone Number</label>
@@ -44,13 +56,60 @@
           </div>
           <div class="form-element">
             <label for="user_address_state">State</label>
-            <select class="" id="user_address_state" name="user_address_state">
+            <select id="user_address_state" name="user_address_state">
               <option value="" disabled selected>Choose State</option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="al">Alabama</option>
+              <option value="ak">Alaska</option>
+              <option value="az">Arizona</option>
+              <option value="ar">Arkansas</option>
+              <option value="ca">California</option>
+              <option value="co">Colorado</option>
+              <option value="ct">Connecticut</option>
+              <option value="de">Delaware</option>
+              <option value="fl">Florida</option>
+              <option value="ga">Georgia</option>
+              <option value="hi">Hawaii</option>
+              <option value="id">Idaho</option>
+              <option value="il">Illinois</option>
+              <option value="in">Iowa</option>
+              <option value="ks">Kansas</option>
+              <option value="ky">Kentucky</option>
+              <option value="la">Louisiana</option>
+              <option value="me">Maine</option>
+              <option value="md">Maryland</option>
+              <option value="ma">Massachusetts</option>
+              <option value="mi">Michigan</option>
+              <option value="mn">Minnesota</option>
+              <option value="ms">Mississippi</option>
+              <option value="mo">Missouri</option>
+              <option value="mt">Montana</option>
+              <option value="ne">Nebraska</option>
+              <option value="nv">Nevada</option>
+              <option value="nh">New Hampshire</option>
+              <option value="nj">New Jersey</option>
+              <option value="nm">New Mexico</option>
+              <option value="ny">New York</option>
+              <option value="nc">North Carolina</option>
+              <option value="nd">North Dakota</option>
+              <option value="oh">Ohio</option>
+              <option value="ok">Oklahoma</option>
+              <option value="or">Oregon</option>
+              <option value="pa">Pennsylvania</option>
+              <option value="ri">Rhode Island</option>
+              <option value="sc">South Carolina</option>
+              <option value="sd">South Dakota</option>
+              <option value="tn">Tennessee</option>
+              <option value="tx">Texas</option>
+              <option value="ut">Utah</option>
+              <option value="vt">Vermont</option>
+              <option value="va">Virginia</option>
+              <option value="wa">Washington</option>
+              <option value="wv">West Virginia</option>
+              <option value="wi">Wisconsin</option>
+              <option value="wy">Wyoming</option>
             </select>
           </div>
-          <div class="form-element">
+          <div class="form-element zipcode">
             <label for="user_address_zipcode">Zip Code</label>
             <input type="text" id="user_address_zipcode" name="user_address_zipcode">
           </div>
@@ -88,7 +147,7 @@
           </div>
           <div class="textarea">
             <p>Other topics you'd like to hear about</p>
-            <textarea id="txt_other_topics" name="name" rows="8"></textarea>
+            <textarea id="txt_other_topics" name="txt_other_topics"></textarea>
           </div>
         </fieldset>
         <button type="submit" name="submit">Sign Up</button>

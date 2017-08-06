@@ -94,8 +94,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select,
-textarea,
-button[type="submit"] {
+textarea{
   width: 100%;
   height: 2.4em;
   padding: 0 10px;
@@ -104,6 +103,28 @@ button[type="submit"] {
   border: none;
   border-radius: 7px;
   background-color: #EFF0F1;
+}
+
+input[name="user_address_zipcode"] {
+  width: 50%;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  color: #A4A9AE;
+  text-align: right;
+  font-size: .75em;
+  font-style: italic;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1.5px #46698B solid;
+  background-color: #fff;
 }
 
 textarea {
@@ -115,10 +136,21 @@ textarea {
 button[type="submit"] {
   width: 100%;
   height: 3em;
+  padding: 0 10px;
   margin: 15px 0;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 7px;
   background-color: #4EBBB5;
   color: #fff;
   cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #4EBBB5;
+  border: 1.5px solid #4EBBB5;
+  transition: .3s;
 }
 
 .newsletter input[type="checkbox"],
@@ -168,18 +200,27 @@ footer p {
   .form-element {
     display: flex;
     display: -ms-flex;
+    align-items: center;
     margin: 10px 0;
   }
 
+  .zipcode {
+    justify-content: flex-start;
+  }
+
   .contact-info label {
-    flex: 1;
+    width: 25%;
   }
 
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   select {
-    flex: 3;
+    width: 75%;
+  }
+
+  input[name="user_address_zipcode"] {
+    width: 35%;
   }
 
 }
